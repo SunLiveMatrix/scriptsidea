@@ -1,0 +1,473 @@
+[gd_scene load_steps=45 format=3 uid="uid://be6v5r8m0isu3"]
+
+[ext_resource type="Script" path="res://FileDialog.gd" id="4_n5pxr"]
+[ext_resource type="Script" path="res://Popup.gd" id="5_dafmp"]
+[ext_resource type="Script" path="res://PopupMenu.gd" id="6_dru2m"]
+
+[sub_resource type="World3D" id="World3D_668mx"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_bfraq"]
+
+[sub_resource type="Theme" id="Theme_brjgi"]
+
+[sub_resource type="GDScript" id="GDScript_undq3"]
+script/source = "extends Window
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	print(\"TForm: Idea\")
+	pass # Replace with function body.
+"
+
+[sub_resource type="World3D" id="World3D_v8kmf"]
+
+[sub_resource type="Theme" id="Theme_dkmm6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_02rui"]
+
+[sub_resource type="GDScript" id="GDScript_dda7c"]
+script/source = "extends AcceptDialog
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	print(\"TForm: AcceptDialog\")
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta):
+	# TODO: delta elapsed time since the previous frames 
+	pass
+
+"
+
+[sub_resource type="World3D" id="World3D_pvgsi"]
+
+[sub_resource type="CurveTexture" id="CurveTexture_pqltq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecxj0"]
+resource_local_to_scene = true
+atlas = SubResource("CurveTexture_pqltq")
+filter_clip = true
+
+[sub_resource type="GDScript" id="GDScript_e5yvr"]
+script/source = "extends ConfirmationDialog
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	print(\"TForm: ConfirmationDialog\")
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta):
+	# TODO: delta elapsed time since the previous frames
+	pass
+
+# Definition 1.1. The elementary matrix associated with an elementary row operation for
+# m-rowed matrices is the m × m matrix obtained by applying the row operation to the
+# m × m identity matrix Im .
+
+#region ConfirmationDialog
+class _PROPERTY_USAGE_RESOURCE_NOT_PERSISTENT:
+	func _validate_property(_property):
+		_property = true
+		if _property:
+			while _property:
+				return _property
+#endregion
+
+"
+
+[sub_resource type="World3D" id="World3D_qv4fn"]
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_xkhj5"]
+
+[sub_resource type="Theme" id="Theme_qwae8"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_t2lw0"]
+viewport_path = NodePath("FileDialog")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ycjtr"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_68pe6"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_fg0el"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_3n280"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_vnody"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u02id"]
+
+[sub_resource type="World3D" id="World3D_jriw6"]
+
+[sub_resource type="Gradient" id="Gradient_aoneu"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4581o"]
+gradient = SubResource("Gradient_aoneu")
+
+[sub_resource type="Gradient" id="Gradient_0wlgu"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_axmsq"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_r3rlt"]
+resource_local_to_scene = true
+invert = true
+in_3d_space = true
+seamless = true
+seamless_blend_skirt = 1.0
+as_normal_map = true
+bump_strength = 32.0
+color_ramp = SubResource("Gradient_0wlgu")
+noise = SubResource("FastNoiseLite_axmsq")
+
+[sub_resource type="Theme" id="Theme_he0mx"]
+
+[sub_resource type="FontFile" id="FontFile_vj3ke"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="FontVariation" id="FontVariation_cl15s"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_e0w5t"]
+viewport_path = NodePath("Popup/PopupMenu")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ogvyq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6vnoc"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_5u45d"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_i3s8q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iy1u7"]
+
+[sub_resource type="CurveTexture" id="CurveTexture_qok14"]
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_5x2pn"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_lanwo"]
+
+[sub_resource type="CameraTexture" id="CameraTexture_lgn17"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Idea" type="Window" parent="."]
+disable_3d = true
+use_xr = true
+own_world_3d = true
+world_3d = SubResource("World3D_668mx")
+transparent_bg = true
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+msaa_2d = 1
+msaa_3d = 1
+screen_space_aa = 1
+use_taa = true
+use_debanding = true
+use_occlusion_culling = true
+debug_draw = 1
+use_hdr_2d = true
+vrs_mode = 1
+vrs_texture = SubResource("CanvasTexture_bfraq")
+canvas_item_default_texture_repeat = 1
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+visible = false
+wrap_controls = true
+transient = true
+exclusive = true
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+unfocusable = true
+popup_window = true
+extend_to_title = true
+mouse_passthrough = true
+keep_title_visible = true
+content_scale_mode = 1
+content_scale_aspect = 3
+theme = SubResource("Theme_brjgi")
+script = SubResource("GDScript_undq3")
+
+[node name="AcceptDialog" type="AcceptDialog" parent="Idea"]
+process_mode = 3
+process_thread_group = 1
+process_thread_group_order = 0
+process_thread_messages = 3
+disable_3d = true
+use_xr = true
+own_world_3d = true
+world_3d = SubResource("World3D_v8kmf")
+transparent_bg = true
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+msaa_2d = 2
+msaa_3d = 2
+screen_space_aa = 1
+use_taa = true
+use_debanding = true
+use_occlusion_culling = true
+debug_draw = 1
+use_hdr_2d = true
+vrs_mode = 3
+canvas_item_default_texture_filter = 2
+canvas_item_default_texture_repeat = 1
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+gui_embed_subwindows = true
+positional_shadow_atlas_quad_0 = 5
+positional_shadow_atlas_quad_1 = 5
+positional_shadow_atlas_quad_2 = 5
+positional_shadow_atlas_quad_3 = 5
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+unfocusable = true
+popup_window = true
+extend_to_title = true
+mouse_passthrough = true
+content_scale_mode = 2
+content_scale_aspect = 4
+content_scale_stretch = 1
+theme = SubResource("Theme_dkmm6")
+theme_override_constants/buttons_separation = 10
+theme_override_styles/panel = SubResource("StyleBoxTexture_02rui")
+script = SubResource("GDScript_dda7c")
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="Idea/AcceptDialog"]
+process_mode = 3
+process_thread_group = 1
+process_thread_group_order = 512
+process_thread_messages = 3
+disable_3d = true
+use_xr = true
+own_world_3d = true
+world_3d = SubResource("World3D_pvgsi")
+transparent_bg = true
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+msaa_2d = 1
+msaa_3d = 1
+screen_space_aa = 1
+use_taa = true
+use_debanding = true
+use_occlusion_culling = true
+debug_draw = 1
+use_hdr_2d = true
+scaling_3d_mode = 1
+vrs_mode = 1
+vrs_texture = SubResource("AtlasTexture_ecxj0")
+canvas_item_default_texture_repeat = 2
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+gui_embed_subwindows = true
+positional_shadow_atlas_quad_0 = 6
+positional_shadow_atlas_quad_1 = 6
+positional_shadow_atlas_quad_2 = 6
+positional_shadow_atlas_quad_3 = 6
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+unfocusable = true
+popup_window = true
+extend_to_title = true
+mouse_passthrough = true
+content_scale_mode = 1
+content_scale_aspect = 4
+content_scale_stretch = 1
+dialog_autowrap = true
+script = SubResource("GDScript_e5yvr")
+
+[node name="FileDialog" type="FileDialog" parent="."]
+process_mode = 3
+process_priority = 512
+process_physics_priority = 512
+process_thread_group = 1
+process_thread_group_order = 612
+process_thread_messages = 3
+disable_3d = true
+use_xr = true
+own_world_3d = true
+world_3d = SubResource("World3D_qv4fn")
+transparent_bg = true
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+msaa_2d = 2
+msaa_3d = 2
+screen_space_aa = 1
+use_taa = true
+use_debanding = true
+use_occlusion_culling = true
+debug_draw = 1
+use_hdr_2d = true
+scaling_3d_mode = 2
+vrs_mode = 1
+vrs_texture = SubResource("CurveXYZTexture_xkhj5")
+canvas_item_default_texture_repeat = 2
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+gui_embed_subwindows = true
+positional_shadow_atlas_quad_0 = 3
+positional_shadow_atlas_quad_1 = 3
+positional_shadow_atlas_quad_3 = 3
+unresizable = true
+borderless = true
+always_on_top = true
+transparent = true
+unfocusable = true
+popup_window = true
+extend_to_title = true
+mouse_passthrough = true
+content_scale_mode = 1
+content_scale_aspect = 1
+content_scale_stretch = 1
+theme = SubResource("Theme_qwae8")
+theme_override_colors/folder_icon_color = Color(0, 0, 0, 1)
+theme_override_colors/file_icon_color = Color(0, 0, 0, 1)
+theme_override_colors/file_disabled_color = Color(0, 0, 0, 1)
+theme_override_icons/parent_folder = SubResource("ViewportTexture_t2lw0")
+theme_override_icons/back_folder = SubResource("CanvasTexture_ycjtr")
+theme_override_icons/forward_folder = SubResource("CompressedTexture2D_68pe6")
+theme_override_icons/reload = SubResource("PortableCompressedTexture2D_fg0el")
+theme_override_icons/toggle_hidden = SubResource("PortableCompressedTexture2D_3n280")
+theme_override_icons/folder = SubResource("ImageTexture_vnody")
+theme_override_icons/file = SubResource("AtlasTexture_u02id")
+show_hidden_files = true
+use_native_dialog = true
+script = ExtResource("4_n5pxr")
+
+[node name="Popup" type="Popup" parent="."]
+process_mode = 3
+process_priority = 612
+process_physics_priority = 612
+process_thread_group = 1
+process_thread_group_order = 712
+process_thread_messages = 3
+disable_3d = true
+use_xr = true
+own_world_3d = true
+world_3d = SubResource("World3D_jriw6")
+transparent_bg = true
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+msaa_2d = 3
+msaa_3d = 3
+screen_space_aa = 1
+use_taa = true
+use_debanding = true
+use_occlusion_culling = true
+debug_draw = 1
+use_hdr_2d = true
+scaling_3d_mode = 1
+scaling_3d_scale = 2.0
+texture_mipmap_bias = 2.0
+fsr_sharpness = 2.0
+vrs_mode = 1
+vrs_texture = SubResource("GradientTexture1D_4581o")
+canvas_item_default_texture_filter = 3
+canvas_item_default_texture_repeat = 1
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+gui_embed_subwindows = true
+positional_shadow_atlas_quad_0 = 5
+positional_shadow_atlas_quad_1 = 5
+positional_shadow_atlas_quad_2 = 5
+positional_shadow_atlas_quad_3 = 5
+mouse_passthrough_polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+always_on_top = true
+transparent = true
+extend_to_title = true
+mouse_passthrough = true
+keep_title_visible = true
+content_scale_mode = 1
+content_scale_aspect = 2
+content_scale_stretch = 1
+script = ExtResource("5_dafmp")
+
+[node name="PopupMenu" type="PopupMenu" parent="Popup"]
+process_mode = 3
+process_priority = 712
+process_physics_priority = 712
+process_thread_group = 1
+process_thread_group_order = 812
+process_thread_messages = 3
+disable_3d = true
+use_xr = true
+own_world_3d = true
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+msaa_2d = 1
+msaa_3d = 1
+screen_space_aa = 1
+use_taa = true
+use_debanding = true
+use_occlusion_culling = true
+debug_draw = 1
+use_hdr_2d = true
+scaling_3d_mode = 1
+scaling_3d_scale = 2.0
+texture_mipmap_bias = 2.0
+fsr_sharpness = 2.0
+vrs_mode = 1
+vrs_texture = SubResource("NoiseTexture2D_r3rlt")
+canvas_item_default_texture_filter = 3
+canvas_item_default_texture_repeat = 2
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+positional_shadow_atlas_quad_0 = 5
+positional_shadow_atlas_quad_1 = 5
+positional_shadow_atlas_quad_2 = 5
+positional_shadow_atlas_quad_3 = 5
+always_on_top = true
+transparent = true
+extend_to_title = true
+mouse_passthrough = true
+keep_title_visible = true
+content_scale_mode = 1
+content_scale_aspect = 3
+content_scale_stretch = 1
+theme = SubResource("Theme_he0mx")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_accelerator_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_separator_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_separator_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/indent = 512
+theme_override_constants/h_separation = 612
+theme_override_constants/v_separation = 712
+theme_override_constants/outline_size = 812
+theme_override_constants/separator_outline_size = 912
+theme_override_constants/item_start_padding = 512
+theme_override_constants/item_end_padding = 612
+theme_override_constants/icon_max_width = 712
+theme_override_fonts/font = SubResource("FontFile_vj3ke")
+theme_override_fonts/font_separator = SubResource("FontVariation_cl15s")
+theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_separator_size = 100
+theme_override_icons/checked = SubResource("ViewportTexture_e0w5t")
+theme_override_icons/checked_disabled = SubResource("CanvasTexture_ogvyq")
+theme_override_icons/unchecked = SubResource("CompressedTexture2D_6vnoc")
+theme_override_icons/unchecked_disabled = SubResource("PortableCompressedTexture2D_5u45d")
+theme_override_icons/radio_checked = SubResource("ImageTexture_i3s8q")
+theme_override_icons/radio_checked_disabled = SubResource("AtlasTexture_iy1u7")
+theme_override_icons/radio_unchecked = SubResource("CurveTexture_qok14")
+theme_override_icons/radio_unchecked_disabled = SubResource("CurveXYZTexture_5x2pn")
+theme_override_icons/submenu = SubResource("AnimatedTexture_lanwo")
+theme_override_icons/submenu_mirrored = SubResource("CameraTexture_lgn17")
+hide_on_state_item_selection = true
+submenu_popup_delay = 512.0
+script = ExtResource("6_dru2m")
